@@ -1,0 +1,199 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.do-hyeon-regular {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 타이틀 */
+#team-title{
+  margin-bottom: 0;
+  font-family: "Do Hyeon", sans-serif;;
+  text-align: center;
+}
+#explain{
+  font-family: "Jua", sans-serif;
+  text-align: center;
+}
+
+
+/* 채팅창 조정 */
+.chat-container {
+  display: flex; /* flexbox 레이아웃 사용 */
+  flex-grow: 1; /* 컨테이너내 남은 공간 채움 */
+  justify-content: center; /* 가로 정렬방식을 지정> 가로방향으로 정렬 */
+  align-items: center; /* 수직정렬 방식 지정> 세로방향으로 가운데 정렬 */
+  flex-direction: column; /* 세로 방향으로 배치 */
+}
+
+.chat-box {
+  border-radius: 20px;
+  flex-grow: 1; 
+  height:500px;
+  width: 80%;
+  border: 2px solid #A6A6A6;
+  padding: 10px;
+  overflow-y: scroll;
+  margin-bottom: 15px; /* 입력창과의 간격을 조정 */
+  background: linear-gradient(to bottom, #ffffff, #f6f6f6);
+}
+
+
+/* input-container */
+.input-container {
+  width: 80%;
+  display: flex;
+  position:relative;
+
+}
+
+#message-input {
+  font-size: 15px;
+  background-color: #8b8b8b1c;
+  resize: none;
+  color: black;
+  border-bottom: 2px solid #0000007e;
+  padding:10px;
+  width: 100%;
+  height: 6.25em;
+  resize: none;
+  flex: 1; /* 남은 공간을 모두 차지하도록 설정. */
+  border-radius: 5px;
+  margin-right: 10px; /* 버튼과의 간격을 조정. */
+}
+
+#send-button {
+  padding: 8px 16px;
+  font-size: 20px;
+  background: linear-gradient(to bottom, #2457BD, #003399);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.profile-container {
+  margin-right: 10px; /* 프로필 이미지와 메시지 사이의 간격을 조정 */
+}
+
+
+.message-content {
+  display: flex; /* 채팅 메시지 내용을 가로로 배치. */
+  align-items: center; /* 채팅 메시지 내용을 세로 중앙 정렬. */
+}
+
+
+
+/* user chat CSS */
+
+.profile-image {
+  vertical-align: top;
+  display:flex;
+  width:50px;
+  height:50px;
+  margin-left:10px;
+}
+
+
+.user-chat{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+
+.user-name{
+  font-weight: 900;  /*진한 글꼴 수치*/
+  color: black;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: right;
+  width: auto;
+  
+}
+
+
+
+.user-message {
+  margin-left:auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: #D9E5FF;
+  color: #000000;
+  border-top-right-radius: 0;
+}
+
+
+
+
+/* chat-bot 부분 css */
+
+.profile-image {
+  vertical-align: top;
+  display:inline;
+  width:50px;
+  height:50px;
+  margin-right:10px;
+}
+
+
+.bot-chat{
+  display:flex;
+  align-items: baseline;
+}
+
+
+.pro_image{
+  position: absolute; /* 위치 설정. */
+  top: 0; 
+  left:0;
+  width:30px;
+  height:30px;
+  display:inline;
+  margin-right:30px;
+  border:3px #1a0707; 
+}
+
+
+.bot-name{
+  font-weight: 900;  /*진한 글꼴 수치*/
+  width: 150px;
+  color: black;
+  font-weight: bold;
+  padding-top:10px;
+  margin: 10px 0 10px 0;
+}
+
+
+.bot-message {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  margin-bottom: 5px; 
+  border: 2px solid #ccc;
+  display: inline-block; /* 문장 하나를 하나로 봄 */
+  background: #FFEBFE;
+  color: #000000;
+  margin-right: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+}

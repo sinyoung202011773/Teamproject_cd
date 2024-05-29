@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="sciptsheet" href="js/script.js">
+    <title>Simple Chat App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="team-title" >TeamProject 일꾼</h1>
+        <p id="explain" >
+            자체 대규모 언어 모델(LLM)을 활용한 자연어 처리 업무 비용 감소: 뉴스 기사 요약 Task  <br>
+            간단한 설명/간단한 설명/간단한 설명.
+        </p>
+    
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- 대화 내용 계속 추가되는 곳 -->
+        </div>
+        <div class="input-container">
+            <textarea type="text" id="message-input" placeholder="요약한 뉴스를 복사해주세요."></textarea>
+            <button id="send-button" onclick="clearTextArea()">보내기</button>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+    
+</html>
